@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("YOUR_USER_ID");
+      })();
+    </script>
+    <title>TAKASESTU - Inquary and Map</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="inner_header">
+          <div class="logo_container">
+            <h1 id="main-content"><a href="index.html"> TAKASETSU </a></h1>
+          </div>
+          <ul class="navigation">
+            <li class="li">
+              <a class="a" href="compamy_profile.html">about us</a>
+            </li>
+            <li class="li">
+              <a class="a" href="bussiness.html">Construction Results</a>
+            </li>
+            <li class="li">
+              <a class="a" href="map.html">Inquary</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <h1 class="tittle">Inquary</h1>
+    <h2 class="sub-tittle">Excellent service!</h2>
+    <h4>
+      Address: Nagafusa-cho, Hachioji City 130-5 TEL : 042-661-4105 17 minutes
+      walk from Nishi-Hachioji Station
+    </h4>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7292999280635!2d139.29891627588768!3d35.65904053119241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60191ebe85b5e083%3A0xcc7e2b21d89b6794!2z77yI5pyJ77yJ6auY5qmL6Kit5YKZ5bel5qWt5omA!5e0!3m2!1sja!2shu!4v1682873212213!5m2!1sja!2shu"
+        width="500"
+        height="400"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div class="contact-form">
+      <form action="/action_page.php">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="name" />
+        <label for="e-mail">E-mail:</label>
+        <input type="email" name="email" id="e-mail" placeholder="E-mail" />
+        <label for="phonenumber">phone Number:</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phonenumber"
+          placeholder="phone Number"
+        />
+        <label for="message">message:</label>
+        <textarea
+          name="text"
+          rows="8"
+          id="message"
+          placeholder="message"
+        ></textarea>
+        <p>Sex:</p>
+        <div class="radio-container">
+          <input type="radio" id="radio1" name="radios" class="radio-input" />
+          <label for="radio1" class="radio-label">
+            <span class="radio-indicator"></span>
+            <span class="radio-label-text">Male</span>
+          </label>
+        </div>
+        <div class="radio-container">
+          <input type="radio" id="radio2" name="radios" class="radio-input" />
+          <label for="radio2" class="radio-label">
+            <span class="radio-indicator"></span>
+            <span class="radio-label-text">Female</span>
+          </label>
+        </div>
+
+        <div class="radio-container">
+          <input type="radio" id="radio3" name="radios" class="radio-input" />
+          <label for="radio3" class="radio-label">
+            <span class="radio-indicator"></span>
+            <span class="radio-label-text">Other</span>
+          </label>
+        </div>
+        <p>Where do you find our company?</p>
+        <div class="checkbox-container">
+          <input type="checkbox" id="checkbox1" class="checkbox-input" />
+          <label for="checkbox1" class="checkbox-label">
+            <span class="checkbox-indicator"></span>
+            <span class="checkbox-label-text">Newspaper</span>
+          </label>
+        </div>
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="checkbox2" class="checkbox-input" />
+          <label for="checkbox2" class="checkbox-label">
+            <span class="checkbox-indicator"></span>
+            <span class="checkbox-label-text">Internet</span>
+          </label>
+        </div>
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="checkbox3" class="checkbox-input" />
+          <label for="checkbox3" class="checkbox-label">
+            <span class="checkbox-indicator"></span>
+            <span class="checkbox-label-text">other</span>
+          </label>
+        </div>
+
+        <button onclick="clearInputs()" class="btn-send">Clear</button
+        ><br /><br />
+        <button onclick="SentUserInput()" class="btn-send">Send</button>
+      </form>
+    </div>
+
+    <div class="section_footer">
+      <div class="container">
+        <div class="footer_section_2"></div>
+      </div>
+      <footer>
+        <ul>
+          <li>
+            <a href="#"><img src="image/fb-icon.png" alt="Facebook" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="image/twitter-icon.png" alt="Twitter" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="image/instagram-icon.png" alt="Instagram"
+            /></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <div class="copyright_section">
+      <div class="container">
+        <p id="copyright_text">
+          Hachioji City, Tokyo
+          <span style="font-weight: bold">Takahashi Setsubi Kogyosho Ltd.</span
+          ><br />130-5 Nagafusa-cho, Hachioji City,Tokyo<br />
+          Copyright 2020 All Right Reserved By TAKASETSU
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
